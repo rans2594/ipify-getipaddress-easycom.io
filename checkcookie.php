@@ -29,7 +29,7 @@ function getCookie(cname) {
 
 function getIP(json) {
     window.userip = json.ip;
-  	document.write("My public IP addresseeeesss is: ", userip);
+  	//document.write("My public IP addresseeeesss is: ", userip);
   }
 /*
     var userip = json.ip;
@@ -47,7 +47,7 @@ function getIP(json) {
 		site=result.sites[1];
 		$("#display").append("redirecting to "+site);
 		//alert(site);
-		//window.location=site;
+		window.location=site;
 		//return this;
 	});
 }
@@ -56,7 +56,7 @@ function getIP(json) {
 		$.getJSON("json_files.json", function(result){
 		site=result.sites[0];
 		$("#display").append("redirecting to "+site);
-		//window.location=site;
+		window.location=site;
 		//return this;
 	});
 }
